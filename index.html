@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Crystal Collector</title>
+    <!-- CSS Reset-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- My CSS File -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- My Javascript File -->
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Crystal Collector</h1>
+        <p class="lead">Each of the crystals below represents a random number. Click on the crystals to add to your score and try to match the goal score. If you score matches the goal score, you win. If your score goes above the goal score, you lose. Good luck!</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                    Goal Score:
+                    </div>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><span id="goal-score"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                    Your Score:
+                    </div>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><span id="your-score"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                    Game Counter:
+                    </div>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Wins: <span id="wins"></span></li>
+                    <li class="list-group-item">Losses: <span id="losses"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <img src="assets/images/pink.png" alt="crystal" class="img-thumbnail mt-5" id="crystal1">
+            </div>
+            <div class="col-md-2">
+                <img src="assets/images/orange.png" alt="crystal" class="img-thumbnail mt-5" id="crystal2">
+            </div>
+            <div class="col-md-2">
+                <img src="assets/images/yellow.png" alt="crystal" class="img-thumbnail mt-5" id="crystal3">
+            </div>
+            <div class="col-md-2">
+                <img src="assets/images/blue.png" alt="crystal" class="img-thumbnail mt-5" id="crystal4">
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
+</html>
